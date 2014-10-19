@@ -1,3 +1,3 @@
-#Twitter Week Tree
+#Gulp Boilerplate
 
-See your week tree in twitter
+Basic Gulp application with Javascript and Sass
