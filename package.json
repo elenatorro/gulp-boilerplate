@@ -1,7 +1,7 @@
 {
   "name": "gulp-boilerplate",
   "version": "1.0.0",
-  "description": "See your week tree in twitter",
+  "description": "Gulp Boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
