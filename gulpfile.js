@@ -1,8 +1,8 @@
 /********* Variables *********/
 
 /** Paths **/
-var destinationPath = 'application';
-var assetsPath = '/assets'
+var destinationPath = 'application/';
+var assetsPath = 'assets'
 var styleRootPath = assetsPath + '/scss'
 var styleDestPath = assetsPath + '/css';
 var scriptPath = assetsPath + '/scripts';
@@ -26,16 +26,16 @@ var connect = require('gulp-connect');
 gulp.task('style', function() {
     return gulp.src(styleRootPath + styleRootExtension)
         .pipe(sass())
-        .pipe(gulp.dest(destinationPath + styleDestPath + styleDestExtension));
+        .pipe(gulp.dest(destinationPath + styleDestPath));
 });
 
 gulp.task('scripts', function() {
     return gulp.src(scriptPath + scriptExtension)
         .pipe(concat('script.js'))
-        .pipe(gulp.dest(destinationPath + scriptPath + scriptExtension))
+        .pipe(gulp.dest(destinationPath + scriptPath))
         .pipe(rename('script.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(destinationPath + scriptPath + scriptExtension));
+        .pipe(gulp.dest(destinationPath + scriptPath));
 });
 
 /************* Others *************/
