@@ -9,7 +9,8 @@
   "author": "Elena Torro",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.8.9"
+    "gulp": "^3.8.9",
+    "node-sass": "^1.2.3"
   },
   "dependencies": {
     "gulp": "^3.8.8",
